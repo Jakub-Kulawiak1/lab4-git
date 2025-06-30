@@ -1,3 +1,5 @@
+#!/bin/bash
+
 if [[ "$1" == "--help" || "$1" == "-h" ]]; then
     echo "--date / -d     wyświetla datę"
     echo "--logs / -l     tworzy pliki log"

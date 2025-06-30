@@ -1,7 +1,8 @@
-if [[ "$1" == "--logs" && -n "$2" ]]; then
-    for i in $(seq 1 "$2"); do
-        echo "Plik $i" > "log${i}.txt"
-    done
+if [[ "$1" == "--help" ]]; then
+    echo "--date       wyświetla datę"
+    echo "--logs [N]   tworzy N plików log"
+    echo "--help       pokazuje pomoc"
 fi
+
 
 

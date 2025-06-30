@@ -1,7 +1,11 @@
-if [[ "$1" == "--init" ]]; then
-    git clone https://github.com/TWOJ-LOGIN/TWOJE-REPO.git temp_repo
-    export PATH=$PATH:$(pwd)/temp_repo
+if [[ "$1" == "--error" ]]; then
+    N=${2:-100}
+    mkdir -p errorx
+    for i in $(seq 1 "$N"); do
+        echo "Błąd $i" > "errorx/error${i}.txt"
+    done
 fi
+
 
 
 
